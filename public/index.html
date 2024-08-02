@@ -10,6 +10,7 @@
     
     <!-- Fonts -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +31,7 @@
 </head>
 
 <!-- Header/ Navbar -->
-<body class="bg-white">
+<body style="background-color: #7C3AED;">
   <header>
     <nav class="navbar">
         <button class="navbar-toggle" onclick="openNav()">☰</button>
@@ -38,18 +39,18 @@
             <a style="text-decoration: none; color: white;" href="main.html">ProLearn</a>
         </div>
 
-        <div class="search-container flex items-center bg-white h-12 rounded-full px-6 cursor-pointer custom-shadow">
+        <!-- <div class="search-container flex items-center bg-white h-12 rounded-full px-6 cursor-pointer custom-shadow">
             <input type="text" name="search" placeholder="Search..." class="search-input bg-transparent text-gray-800 border-none outline-none font-medium text-base transition-all duration-800 ease-in-out w-80">
             <a href="#" class="search-btn text-black ml-4">
                 <i class="fas fa-search"></i>
             </a>
-        </div>
+        </div> -->
 
 
         <ul class="navbar-nav">
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle">Get Started</a>
-                <ul class="dropdown-menu">
+                <a href="#" class="dropdown-toggle font-medium">Get Started</a>
+                <ul class="dropdown-menu font-medium">
                     <li><a href="#">Apply to ProLearn</a></li>
                     <li><a href="#">New Student Orientation</a></li>
                     <li><a href="#">Placement</a></li>
@@ -59,8 +60,8 @@
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle">Register for Online Classes</a>
-                <ul class="dropdown-menu">
+                <a href="#" class="dropdown-toggle font-medium">Register for Online Classes</a>
+                <ul class="dropdown-menu font-medium">
                     <li><a href="#">How to Register</a></li>
                     <li><a href="#">Important Dates</a></li>
                     <li><a href="#">Class Schedules</a></li>
@@ -68,11 +69,12 @@
                 </ul>
             </li>
             
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a class="font-medium" href="#about">About</a></li>
+            <li><a class="font-medium" href="#contact">Contact Us</a></li>
         </ul>
-        <div class="navbar-profile">
-            <a href="login.html">Login</a>
+        <div class="navbar-profile font-bold text-lg">
+            <a class="px-2 py-4" href="login.html">Login</a>
+            <a class="bg-purple-950 hover:bg-purple-900 px-5 py-4 rounded-xl text-center content-center justify-center" href="login.html">Sign Up</a>
         </div>
     </nav>
 </header>
@@ -115,57 +117,9 @@
 </div>
   
     <!-- Welcome Section -->
-<!--
-  Heads up! 👋
 
-  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
--->
-
-<section style="top: 105px;"
-  class="relative bg-[url('https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80')] bg-cover bg-center bg-no-repeat"
->
-  <div
-    class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/75 to-transparent"
-  ></div>
-
-  <div
-    class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
-  >
-    <div class="max-w-xl text-left sm:text-left">
-      <h1 class="text-5xl font-extrabold text-white sm:text-6xl">
-        Welcome
-
-        <strong class="block font-extrabold text-green-500"> to ProLearn VLE </strong>
-      </h1>
-
-      <p class="mt-4 max-w-lg text-white sm:text-xl">
-        where endless capability of learning and professional careers can be found!
-      </p>
-
-      <div class="mt-8 flex flex-wrap gap-4 text-center">
-        <a
-          href="#"
-          class="block w-full rounded bg-green-500 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
-        >
-          Get Started
-        </a>
-
-        <a
-          href="#"
-          class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-green-500 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
-        >
-          Learn More
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Spline Testing -->
-    <!-- Spline Embed Code -->
-    <!-- class="absolute top-0 left-0 w-full h-full border-none" -->
-    <!-- <iframe style="top: 105px;" class="absolute left-0 w-full h-full border-none" src="https://my.spline.design/loopingstaircaseportal-86da007e2447a7045cca0253ef511c7a/" frameborder="0"></iframe> -->
-    <iframe style="top: 105px;" class="absolute left-0 w-full h-full border-none" src='https://my.spline.design/reededglassprismherosectionuiconcept-bf3e5f7f8e06e24538bbfc41f07e1cc1/' frameborder='0' width='100%' height='100%'></iframe>
+    <div class="relative w-full h-screen">
+    <iframe style="top: 105px;" class="absolute left-0 w-full h-full border-none bg-cover bg-center bg-no-repeat" src='https://my.spline.design/reededglassprismherosectionuiconcept-bf3e5f7f8e06e24538bbfc41f07e1cc1/' frameborder='0' width='100%' height='100%'></iframe>
     <!-- Overlay Content -->
     <div class="absolute top-16 inset-0 mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
         <div class="max-w-xl text-left sm:text-left">
@@ -176,23 +130,69 @@
             <p class="mt-4 max-w-lg text-gray-700 sm:text-xl">
                 where endless capability of learning and professional careers can be found!
             </p>
-            <div class="mt-8 flex flex-wrap gap-4 text-center">
+
+            <!-- Search Bar -->
+            <div class="s003">
+              <form>
+                <div class="inner-form">
+                  <div class="input-field first-wrap flex items-center justify-center">
+                    <div class="input-select">
+                      <select class="text-center outline-none" data-trigger="" name="choices-single-defaul">
+                        <option placeholder="">Category</option>
+                        <option>New Arrivals</option>
+                        <option>Sale</option>
+                        <option>Ladies</option>
+                        <option>Men</option>
+                        <option>Clothing</option>
+                        <option>Footwear</option>
+                        <option>Accessories</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="input-field second-wrap">
+                    <input id="search" type="text" placeholder="Enter Keywords?" />
+                  </div>
+                  <div class="input-field third-wrap">
+                    <button class="btn-search" type="button">
+                      Search
+                      <!-- <svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                      </svg> -->
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <script src="js/extention/choices.js"></script>
+            <script>
+              const choices = new Choices('[data-trigger]',
+              {
+                searchEnabled: false,
+                itemSelectText: '',
+              });
+        
+            </script>
+
+            <!-- Buttons -->
+            <!-- <div class="mt-8 flex flex-wrap gap-4 text-center">
                 <a href="#" class="block w-full rounded bg-indigo-700 px-12 py-3 text-sm font-medium text-white shadow hover:bg-indigo-500 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto">
                     Get Started
                 </a>
                 <a href="#" class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-indigo-700 shadow hover:text-indigo-500 focus:outline-none focus:ring active:text-rose-500 sm:w-auto">
                     Learn More
                 </a>
-            </div>
+            </div> -->
         </div>
     </div>
+  </div>
+  <!-- </section> -->
 
 <!-- After hero section -->
 <div class="bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:text-center">
-        <h2 class="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Everything you need to deploy your app</p>
+        <h2 class="text-base font-semibold leading-7 text-indigo-600">Learn faster</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Everything you need is here</p>
         <p class="mt-6 text-lg leading-8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
       </div>
       <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -312,7 +312,7 @@
         <button
           aria-label="Previous slide"
           id="keen-slider-previous"
-          class="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+          class="rounded-full border bg-white p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -329,7 +329,7 @@
         <button
           aria-label="Next slide"
           id="keen-slider-next"
-          class="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+          class="rounded-full border bg-white p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white"
         >
           <svg
             class="size-5 rtl:rotate-180"
