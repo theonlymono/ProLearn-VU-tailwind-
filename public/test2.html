@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .slider {
+            height: 225px; /* Updated height */
+            margin: auto;
+            position: relative;
+            width: 80%; /* Adjusted width */
+            display: grid;
+            place-items: center;
+        }
+
+        .slide-track {
+            display: flex;
+            width: calc(500px * 18); /* Updated width */
+            animation: scroll 40s linear infinite;
+        }
+
+        .slide-track.reverse {
+            animation: scroll-reverse 40s linear infinite;
+        }
+
+        .slide-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-500px * 9)); /* Updated width */
+            }
+        }
+
+        @keyframes scroll-reverse {
+            0% {
+                transform: translateX(calc(-500px * 9));
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+        
+        .slide {
+            height: 250px; /* Updated height */
+            width: 500px; /* Updated width */
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center content horizontally */
+            padding: 15px;
+            perspective: 100px;
+        }
+
+        img {
+            height: 250px; /* Fixed height */
+            width: 500px; /* Fixed width */
+            object-fit: cover; /* Ensure images cover the container without distortion */
+            transition: transform 1s;
+            border-radius: 15px;
+        }
+
+        img:hover {
+            border-radius: 15px;
+            /* transform: translateZ(20px); */
+        }
+
+        /* GRADIENT SHADOWS */
+
+        /* .slider::before,
+        .slider::after {
+            background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+            content: '';
+            height: 100%;
+            position: absolute;
+            width: 15%;
+            z-index: 2;
+        }
+
+        .slider::before {
+            left: 0;
+            top: 0;
+        }
+
+        .slider::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        } */
+    </style>
+
+</head>
+<body>
+    
+    <div class="slider">
+
+        <div class="slide-track">
+
+            <!-- 9 SLIDES -->
+
+            <div class="slide">
+                <img src="https://c.wallhere.com/photos/e8/5a/landscape_nature-84251.jpg!d" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://images.fineartamerica.com/images-medium-large-5/sunset-sunrise-above-a-lake-in-beautiful-glowing-colors-ulrich-schade.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://live.staticflickr.com/744/21612673754_33479183fc.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://www.brit.co/media-library/a-paddleboarder-crosses-lake-tahoe-against-a-brilliant-sunset.jpg?id=21300927&width=980" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/736x/e1/ac/9b/e1ac9bda6e16507972f498e54bfb691e--pink-sunset-rock-on.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/6-tahoe-sunset-martin-gollery.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://images.expothemes.com/lake-tahoe/images/lake-tahoe-windows-theme-1-medium.webp" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://www.wallpaperflare.com/static/336/1016/901/lake-stones-day-water-wallpaper.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://www.gotthewanderingeye.com/wp-content/uploads/2018/02/sand-harbour_wm.jpg" alt="">
+            </div>
+            
+            <!-- Same 9 SLIDES (Duplicated) -->
+
+            <div class="slide">
+                <img src="https://c.wallhere.com/photos/e8/5a/landscape_nature-84251.jpg!d" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://images.fineartamerica.com/images-medium-large-5/sunset-sunrise-above-a-lake-in-beautiful-glowing-colors-ulrich-schade.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://live.staticflickr.com/744/21612673754_33479183fc.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://www.brit.co/media-library/a-paddleboarder-crosses-lake-tahoe-against-a-brilliant-sunset.jpg?id=21300927&width=980" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/736x/e1/ac/9b/e1ac9bda6e16507972f498e54bfb691e--pink-sunset-rock-on.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/6-tahoe-sunset-martin-gollery.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://images.expothemes.com/lake-tahoe/images/lake-tahoe-windows-theme-1-medium.webp" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://www.wallpaperflare.com/static/336/1016/901/lake-stones-day-water-wallpaper.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://www.gotthewanderingeye.com/wp-content/uploads/2018/02/sand-harbour_wm.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="slide-track reverse">
+
+            <!-- 9 SLIDES -->
+
+            <div class="slide">
+                <img src="https://c.wallhere.com/photos/e8/5a/landscape_nature-84251.jpg!d" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://images.fineartamerica.com/images-medium-large-5/sunset-sunrise-above-a-lake-in-beautiful-glowing-colors-ulrich-schade.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://live.staticflickr.com/744/21612673754_33479183fc.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://www.brit.co/media-library/a-paddleboarder-crosses-lake-tahoe-against-a-brilliant-sunset.jpg?id=21300927&width=980" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/736x/e1/ac/9b/e1ac9bda6e16507972f498e54bfb691e--pink-sunset-rock-on.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/6-tahoe-sunset-martin-gollery.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://images.expothemes.com/lake-tahoe/images/lake-tahoe-windows-theme-1-medium.webp" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://www.wallpaperflare.com/static/336/1016/901/lake-stones-day-water-wallpaper.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://www.gotthewanderingeye.com/wp-content/uploads/2018/02/sand-harbour_wm.jpg" alt="">
+            </div>
+            
+            <!-- Same 9 SLIDES (Duplicated) -->
+
+            <div class="slide">
+                <img src="https://c.wallhere.com/photos/e8/5a/landscape_nature-84251.jpg!d" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://images.fineartamerica.com/images-medium-large-5/sunset-sunrise-above-a-lake-in-beautiful-glowing-colors-ulrich-schade.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://live.staticflickr.com/744/21612673754_33479183fc.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://www.brit.co/media-library/a-paddleboarder-crosses-lake-tahoe-against-a-brilliant-sunset.jpg?id=21300927&width=980" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/736x/e1/ac/9b/e1ac9bda6e16507972f498e54bfb691e--pink-sunset-rock-on.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/6-tahoe-sunset-martin-gollery.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://images.expothemes.com/lake-tahoe/images/lake-tahoe-windows-theme-1-medium.webp" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://www.wallpaperflare.com/static/336/1016/901/lake-stones-day-water-wallpaper.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://www.gotthewanderingeye.com/wp-content/uploads/2018/02/sand-harbour_wm.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
